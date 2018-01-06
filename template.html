@@ -1,0 +1,19 @@
+<!-- Sidebar -->
+
+<td style="width: 150px; border: 1px solid #136f8d;" valign="top">
+    <a href="http://ssdp.org/sensible-society">
+        <img style="margin-bottom: 10px;" title="Sensible Society" src="http://ssdp.org/assets/2014/03/sensible-society2.png"
+            alt="Sensible Society" width="200" height="150" />
+    </a>
+    <br />Sensible Society members support SSDP with monthly or one-time gifts. These unrestricted funds ensure chapters can continue
+    to thrive and SSDP will continue to grow sustainably.
+    <br />
+    <br />
+    <strong>Your 2017 gifts: {{ recipient.custom_values_for_display['17_eoy_total'] }}</strong>
+    <br />
+    <span>Your 2016 gifts: {{ recipient.custom_values_for_display['16_eoy_total'] }}
+        <br />
+    </span>
+    <br />{% if recipient.has_donated? %}
+    <a href="http://ssdp.org/sensible-society">Thank you for all of your support to build a more Sensible Society!</a>{% else %}
+    <a href="http://ssdp.org/sensible-society">Will you join us in building a more Sensible Society? </a>{% endif %}</td>
